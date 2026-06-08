@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0976E631565800BBE26DBB84 /* BookletPreviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA6C1EA88A95F029AAD1C57 /* BookletPreviewModel.swift */; };
+		3189D7FFBFCAA031B8102BE0 /* BookletSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8913533B6C48B5141936972 /* BookletSettings.swift */; };
+		36D893396A9BBEAA6FAFB935 /* BookletImposerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D902C329FE4377C40AE11D9 /* BookletImposerTests.swift */; };
+		3F1F7C7BDE8FDCB8D749E6C5 /* PDFDocument+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521BA8FF0802ADD6DF4A8578 /* PDFDocument+Images.swift */; };
+		8B745F85C4AADA7A4495146C /* VirtualizedBookletPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6520A1AC62A79A4399A6D85B /* VirtualizedBookletPreview.swift */; };
+		93587FF846B88F24EA18C606 /* PageNumberRenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33B59A9F57117113D8B372E /* PageNumberRenderTests.swift */; };
+		9E5CC4DC17E89E9EBDE50301 /* LoadedDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93E72394EF6FF9D7E630C9A /* LoadedDocument.swift */; };
+		A294F1EE8437BB8C7DE741E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5ADA5D3895F67B6B30A687E /* Assets.xcassets */; };
+		CD4C0641D68C470CF19A0BB8 /* BookleetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7065D4630D8F52AF6C0CE65C /* BookleetApp.swift */; };
+		DC816EDE2FD6E35300BFF39C /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = DC816EDD2FD6E35300BFF39C /* AppIcon.icon */; };
+		E8978AE4441250C3C5F2DF23 /* BookletImposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A162C37A53646103599E5E /* BookletImposer.swift */; };
+		F0715244B4AF9537AC5083FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5A4DC927280F4A3996919C /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE3278DD6FA0780308C49A07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A28A4FCACB92312391AEB9E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69511B4EBDFD014366F3B6EC;
+			remoteInfo = Bookleet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4D902C329FE4377C40AE11D9 /* BookletImposerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookletImposerTests.swift; sourceTree = "<group>"; };
+		4FA6C1EA88A95F029AAD1C57 /* BookletPreviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookletPreviewModel.swift; sourceTree = "<group>"; };
+		521BA8FF0802ADD6DF4A8578 /* PDFDocument+Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PDFDocument+Images.swift"; sourceTree = "<group>"; };
+		6520A1AC62A79A4399A6D85B /* VirtualizedBookletPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualizedBookletPreview.swift; sourceTree = "<group>"; };
+		6E7F24B051594C940A2D0326 /* Bookleet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookleet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7065D4630D8F52AF6C0CE65C /* BookleetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookleetApp.swift; sourceTree = "<group>"; };
+		7554CB3E5B228CC946A5F611 /* BookleetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookleetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3A162C37A53646103599E5E /* BookletImposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookletImposer.swift; sourceTree = "<group>"; };
+		D33B59A9F57117113D8B372E /* PageNumberRenderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageNumberRenderTests.swift; sourceTree = "<group>"; };
+		D5ADA5D3895F67B6B30A687E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8913533B6C48B5141936972 /* BookletSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookletSettings.swift; sourceTree = "<group>"; };
+		DC816EDD2FD6E35300BFF39C /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
+		F93E72394EF6FF9D7E630C9A /* LoadedDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadedDocument.swift; sourceTree = "<group>"; };
+		FD5A4DC927280F4A3996919C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		52C7522B1BE9B4BBD506F0C4 /* BookleetTests */ = {
+			isa = PBXGroup;
+			children = (
+				4D902C329FE4377C40AE11D9 /* BookletImposerTests.swift */,
+				D33B59A9F57117113D8B372E /* PageNumberRenderTests.swift */,
+			);
+			path = BookleetTests;
+			sourceTree = "<group>";
+		};
+		5ADF984549D1C963A18C5067 /* Bookleet */ = {
+			isa = PBXGroup;
+			children = (
+				D5ADA5D3895F67B6B30A687E /* Assets.xcassets */,
+				7065D4630D8F52AF6C0CE65C /* BookleetApp.swift */,
+				B3A162C37A53646103599E5E /* BookletImposer.swift */,
+				4FA6C1EA88A95F029AAD1C57 /* BookletPreviewModel.swift */,
+				D8913533B6C48B5141936972 /* BookletSettings.swift */,
+				FD5A4DC927280F4A3996919C /* ContentView.swift */,
+				F93E72394EF6FF9D7E630C9A /* LoadedDocument.swift */,
+				521BA8FF0802ADD6DF4A8578 /* PDFDocument+Images.swift */,
+				6520A1AC62A79A4399A6D85B /* VirtualizedBookletPreview.swift */,
+			);
+			path = Bookleet;
+			sourceTree = "<group>";
+		};
+		61FED4D97A929EF3350ECD09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E7F24B051594C940A2D0326 /* Bookleet.app */,
+				7554CB3E5B228CC946A5F611 /* BookleetTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEF18968D22402A10EF187C7 = {
+			isa = PBXGroup;
+			children = (
+				5ADF984549D1C963A18C5067 /* Bookleet */,
+				52C7522B1BE9B4BBD506F0C4 /* BookleetTests */,
+				61FED4D97A929EF3350ECD09 /* Products */,
+				DC816EDD2FD6E35300BFF39C /* AppIcon.icon */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69511B4EBDFD014366F3B6EC /* Bookleet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6515C6A19BD7524413D8536 /* Build configuration list for PBXNativeTarget "Bookleet" */;
+			buildPhases = (
+				A264570F3E259DFDFBD12EBE /* Sources */,
+				672AC07BDF89DCC5FF17EAED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bookleet;
+			packageProductDependencies = (
+			);
+			productName = Bookleet;
+			productReference = 6E7F24B051594C940A2D0326 /* Bookleet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C89E89D8C688A35CE973CDB2 /* BookleetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8016E28F03650FE144527B7 /* Build configuration list for PBXNativeTarget "BookleetTests" */;
+			buildPhases = (
+				222E500414D448093E034AD5 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5899ED142D586BD21DE374ED /* PBXTargetDependency */,
+			);
+			name = BookleetTests;
+			packageProductDependencies = (
+			);
+			productName = BookleetTests;
+			productReference = 7554CB3E5B228CC946A5F611 /* BookleetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A28A4FCACB92312391AEB9E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					69511B4EBDFD014366F3B6EC = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 193B710D7728AC00E6247825 /* Build configuration list for PBXProject "Bookleet" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CEF18968D22402A10EF187C7;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 61FED4D97A929EF3350ECD09 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69511B4EBDFD014366F3B6EC /* Bookleet */,
+				C89E89D8C688A35CE973CDB2 /* BookleetTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		672AC07BDF89DCC5FF17EAED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A294F1EE8437BB8C7DE741E6 /* Assets.xcassets in Resources */,
+				DC816EDE2FD6E35300BFF39C /* AppIcon.icon in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		222E500414D448093E034AD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36D893396A9BBEAA6FAFB935 /* BookletImposerTests.swift in Sources */,
+				93587FF846B88F24EA18C606 /* PageNumberRenderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A264570F3E259DFDFBD12EBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD4C0641D68C470CF19A0BB8 /* BookleetApp.swift in Sources */,
+				E8978AE4441250C3C5F2DF23 /* BookletImposer.swift in Sources */,
+				0976E631565800BBE26DBB84 /* BookletPreviewModel.swift in Sources */,
+				3189D7FFBFCAA031B8102BE0 /* BookletSettings.swift in Sources */,
+				F0715244B4AF9537AC5083FA /* ContentView.swift in Sources */,
+				9E5CC4DC17E89E9EBDE50301 /* LoadedDocument.swift in Sources */,
+				3F1F7C7BDE8FDCB8D749E6C5 /* PDFDocument+Images.swift in Sources */,
+				8B745F85C4AADA7A4495146C /* VirtualizedBookletPreview.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5899ED142D586BD21DE374ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69511B4EBDFD014366F3B6EC /* Bookleet */;
+			targetProxy = FE3278DD6FA0780308C49A07 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		27B6BAD20C4CC803A9F1843F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		2F4066B4E69C41C52B5BD5CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Bookleet/Bookleet.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = Bookleet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bookleet.Bookleet;
+				PRODUCT_NAME = Bookleet;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		337C577A1A9071926F0E43E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		8EAA08C124631F70F4B1B077 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bookleet.BookleetTests;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bookleet.app/Contents/MacOS/Bookleet";
+			};
+			name = Debug;
+		};
+		B86E008087BDD12815A1CC81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bookleet.BookleetTests;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bookleet.app/Contents/MacOS/Bookleet";
+			};
+			name = Release;
+		};
+		F7C811365CAD00953980DDF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Bookleet/Bookleet.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = Bookleet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bookleet.Bookleet;
+				PRODUCT_NAME = Bookleet;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		193B710D7728AC00E6247825 /* Build configuration list for PBXProject "Bookleet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27B6BAD20C4CC803A9F1843F /* Debug */,
+				337C577A1A9071926F0E43E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A6515C6A19BD7524413D8536 /* Build configuration list for PBXNativeTarget "Bookleet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F4066B4E69C41C52B5BD5CA /* Debug */,
+				F7C811365CAD00953980DDF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A8016E28F03650FE144527B7 /* Build configuration list for PBXNativeTarget "BookleetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EAA08C124631F70F4B1B077 /* Debug */,
+				B86E008087BDD12815A1CC81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A28A4FCACB92312391AEB9E7 /* Project object */;
+}

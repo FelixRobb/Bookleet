@@ -4,9 +4,29 @@ Bookleet is a native macOS SwiftUI app for turning ordinary PDFs into print-read
 
 ## Run in Xcode
 
-1. Open `Package.swift` in Xcode.
-2. Select the `Bookleet` executable scheme.
-3. Press Run.
+1. Open `Bookleet.xcodeproj` in Xcode.
+2. Select the **Bookleet** scheme.
+3. Set your **Team** under Signing & Capabilities (target **Bookleet**).
+4. Press Run.
+
+## Project layout
+
+```
+Bookleet/           App source, Info.plist, entitlements, assets
+BookleetTests/      Unit tests
+Bookleet.xcodeproj  Xcode project
+```
+
+The `.xcodeproj` is generated from `project.yml` via [XcodeGen](https://github.com/yonaskolb/XcodeGen). After changing targets or build settings in `project.yml`, run `xcodegen generate`.
+
+## Build & distribute
+
+- **Debug run:** Product → Run (⌘R)
+- **Release archive:** Product → Archive, then distribute or export from the Organizer
+- **Command line:** `xcodebuild -project Bookleet.xcodeproj -scheme Bookleet -configuration Release archive`
+- **Tests:** Product → Test (⌘U), or `xcodebuild test -project Bookleet.xcodeproj -scheme Bookleet -destination 'platform=macOS'`
+
+Bundle ID: `com.bookleet.Bookleet`. Add app icon images to `Bookleet/Assets.xcassets/AppIcon.appiconset/`.
 
 ## What works now
 
