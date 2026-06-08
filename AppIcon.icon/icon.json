@@ -4,29 +4,41 @@
   },
   "groups" : [
     {
+      "blur-material" : 0.5,
+      "hidden" : false,
       "layers" : [
         {
           "blend-mode" : "normal",
-          "fill" : {
-            "solid" : "display-p3:0.00000,0.00000,0.00000,1.00000"
-          },
+          "fill-specializations" : [
+            {
+              "value" : {
+                "solid" : "srgb:0.12984,0.12985,0.12984,1.00000"
+              }
+            },
+            {
+              "appearance" : "dark",
+              "value" : {
+                "solid" : "srgb:0.57415,0.57416,0.57415,1.00000"
+              }
+            },
+            {
+              "appearance" : "tinted",
+              "value" : {
+                "solid" : "srgb:1.00000,1.00000,1.00000,1.00000"
+              }
+            }
+          ],
           "glass" : true,
-          "hidden" : false,
-          "image-name" : "[CITYPNG.COM]PNG Open Book Black Icon Symbol - 500x500.png",
-          "name" : "[CITYPNG.COM]PNG Open Book Black Icon Symbol - 500x500",
-          "position" : {
-            "scale" : 1.66,
-            "translation-in-points" : [
-              0,
-              0
-            ]
-          }
+          "image-name" : "book.pages.fill 5.png",
+          "name" : "book.pages.fill 5"
         }
       ],
+      "lighting" : "combined",
       "shadow" : {
         "kind" : "neutral",
         "opacity" : 0.5
       },
+      "specular" : true,
       "translucency" : {
         "enabled" : true,
         "value" : 0.5
