@@ -15,12 +15,54 @@ struct ContentView: View {
     @State private var isPrintSheetPresented = false
     @State private var isDropTargeted = false
 
+    private var hasDocument: Bool {
+        loadedDocument != nil
+    }
+
     var body: some View {
         NavigationSplitView {
             sidebar
         } detail: {
             previewPane
         }
+        .toolbar {
+            ToolbarItemGroup(placement: .primaryAction) {
+                Button {
+                    isImporterPresented = true
+                } label: {
+                    Label("Open", systemImage: "doc.badge.plus")
+                }
+                .help("Open document (⌘O)")
+
+                Button {
+                    exportBooklet()
+                } label: {
+                    Label("Export", systemImage: "square.and.arrow.down")
+                }
+                .disabled(!hasDocument)
+                .help("Export PDF (⌘E)")
+
+                Button {
+                    prepareFinalPrint()
+                } label: {
+                    Label("Print", systemImage: "printer")
+                }
+                .disabled(!hasDocument)
+                .help("Final print (⌘P)")
+            }
+        }
+        .focusedSceneValue(\.bookleetActions, BookleetActions(
+            openDocument: { isImporterPresented = true },
+            exportPDF: { exportBooklet() },
+            finalPrint: { prepareFinalPrint() },
+            nativePrint: { runFinalPrint(showNativeDialog: true) },
+            resetSettings: { settings = BookletSettings() },
+            canExport: hasDocument,
+            canPrint: hasDocument
+        ))
+        .focusedSceneValue(\.drawFoldGuide, $settings.drawFoldGuide)
+        .focusedSceneValue(\.drawCutMarks, $settings.drawCutMarks)
+        .focusedSceneValue(\.showPreviewBorders, $settings.showPageBordersInPreview)
         .fileImporter(isPresented: $isImporterPresented, allowedContentTypes: DocumentLoader.supportedTypes) { result in
             handleImport(result)
         }

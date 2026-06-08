@@ -11,7 +11,7 @@ struct BookleetApp: App {
         }
         .windowStyle(.titleBar)
         .commands {
-            CommandGroup(replacing: .newItem) {}
+            BookleetCommands()
         }
     }
 }
