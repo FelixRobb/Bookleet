@@ -9,10 +9,24 @@ Bookleet is a native macOS SwiftUI app for turning ordinary PDFs into print-read
 3. Set your **Team** under Signing & Capabilities (target **Bookleet**).
 4. Press Run.
 
+## Command line
+
+Build the `bookleet` tool (Xcode scheme **BookleetCLI**, or `xcodebuild -target BookleetCLI`), then run:
+
+```bash
+bookleet document.pdf
+bookleet -o output.pdf --paper a4 --margin 12 manual.pdf
+bookleet --page-range 3-20 --page-numbers outside report.pdf
+bookleet --help
+```
+
+The CLI uses the same imposition engine as the app. Output defaults to `<input>-booklet.pdf` beside the source file.
+
 ## Project layout
 
 ```
 Bookleet/           App source, Info.plist, entitlements, assets
+BookleetCLI/        Command-line tool entry point
 BookleetTests/      Unit tests
 Bookleet.xcodeproj  Xcode project
 ```

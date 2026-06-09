@@ -57,6 +57,24 @@ targets:
         GENERATE_INFOPLIST_FILE: YES
         SWIFT_ACTIVE_COMPILATION_CONDITIONS: DEBUG
 
+  BookleetCLI:
+    type: tool
+    platform: macOS
+    sources:
+      - path: BookleetCLI
+      - path: Bookleet/BookletImposer.swift
+      - path: Bookleet/BookletSettings.swift
+      - path: Bookleet/LoadedDocument.swift
+      - path: Bookleet/PDFDocument+Images.swift
+    settings:
+      base:
+        PRODUCT_NAME: bookleet
+        PRODUCT_BUNDLE_IDENTIFIER: com.bookleet.cli
+        GENERATE_INFOPLIST_FILE: YES
+    scheme:
+      commandLineArguments:
+        - --help
+
 schemes:
   Bookleet:
     build:
@@ -75,3 +93,4 @@ schemes:
       config: Debug
     archive:
       config: Release
+

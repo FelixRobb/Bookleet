@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		0976E631565800BBE26DBB84 /* BookletPreviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA6C1EA88A95F029AAD1C57 /* BookletPreviewModel.swift */; };
+		1974FB4E13FB2F64620BC1A3 /* BookletImposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A162C37A53646103599E5E /* BookletImposer.swift */; };
 		3189D7FFBFCAA031B8102BE0 /* BookletSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8913533B6C48B5141936972 /* BookletSettings.swift */; };
 		36D893396A9BBEAA6FAFB935 /* BookletImposerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D902C329FE4377C40AE11D9 /* BookletImposerTests.swift */; };
 		3F1F7C7BDE8FDCB8D749E6C5 /* PDFDocument+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521BA8FF0802ADD6DF4A8578 /* PDFDocument+Images.swift */; };
+		6EE5D4B59E38108DAD1D0079 /* BookleetCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781BE8068BB3233D72AD5C25 /* BookleetCommands.swift */; };
+		890E51344BE0484FD91C3045 /* LoadedDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93E72394EF6FF9D7E630C9A /* LoadedDocument.swift */; };
 		8B745F85C4AADA7A4495146C /* VirtualizedBookletPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6520A1AC62A79A4399A6D85B /* VirtualizedBookletPreview.swift */; };
 		93587FF846B88F24EA18C606 /* PageNumberRenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33B59A9F57117113D8B372E /* PageNumberRenderTests.swift */; };
+		9515E33A5A135D69A4A06573 /* BookletSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8913533B6C48B5141936972 /* BookletSettings.swift */; };
 		9E5CC4DC17E89E9EBDE50301 /* LoadedDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93E72394EF6FF9D7E630C9A /* LoadedDocument.swift */; };
 		A294F1EE8437BB8C7DE741E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5ADA5D3895F67B6B30A687E /* Assets.xcassets */; };
+		A2A1F8CA3F512B9ACD5C08F0 /* PDFDocument+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521BA8FF0802ADD6DF4A8578 /* PDFDocument+Images.swift */; };
 		CD4C0641D68C470CF19A0BB8 /* BookleetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7065D4630D8F52AF6C0CE65C /* BookleetApp.swift */; };
-		E1A2B3C4D5E6F708192A3B4C /* BookleetCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A2B3C4D5E6F708192A3B4D /* BookleetCommands.swift */; };
-		DC895FCE2FD6FD0700A74F4C /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = DC895FCD2FD6FD0700A74F4C /* AppIcon.icon */; };
 		E8978AE4441250C3C5F2DF23 /* BookletImposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A162C37A53646103599E5E /* BookletImposer.swift */; };
+		EBAA6590C3D77F0AC1279B4F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE04B3606321615AF7D27028 /* main.swift */; };
 		F0715244B4AF9537AC5083FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5A4DC927280F4A3996919C /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,21 +40,30 @@
 		4D902C329FE4377C40AE11D9 /* BookletImposerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookletImposerTests.swift; sourceTree = "<group>"; };
 		4FA6C1EA88A95F029AAD1C57 /* BookletPreviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookletPreviewModel.swift; sourceTree = "<group>"; };
 		521BA8FF0802ADD6DF4A8578 /* PDFDocument+Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PDFDocument+Images.swift"; sourceTree = "<group>"; };
+		5F6C7E80ADE637DE0319265E /* BookleetCLI */ = {isa = PBXFileReference; includeInIndex = 0; path = BookleetCLI; sourceTree = BUILT_PRODUCTS_DIR; };
 		6520A1AC62A79A4399A6D85B /* VirtualizedBookletPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualizedBookletPreview.swift; sourceTree = "<group>"; };
 		6E7F24B051594C940A2D0326 /* Bookleet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookleet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7065D4630D8F52AF6C0CE65C /* BookleetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookleetApp.swift; sourceTree = "<group>"; };
-		E1A2B3C4D5E6F708192A3B4D /* BookleetCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookleetCommands.swift; sourceTree = "<group>"; };
 		7554CB3E5B228CC946A5F611 /* BookleetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookleetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		781BE8068BB3233D72AD5C25 /* BookleetCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookleetCommands.swift; sourceTree = "<group>"; };
 		B3A162C37A53646103599E5E /* BookletImposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookletImposer.swift; sourceTree = "<group>"; };
 		D33B59A9F57117113D8B372E /* PageNumberRenderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageNumberRenderTests.swift; sourceTree = "<group>"; };
 		D5ADA5D3895F67B6B30A687E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8913533B6C48B5141936972 /* BookletSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookletSettings.swift; sourceTree = "<group>"; };
-		DC895FCD2FD6FD0700A74F4C /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
+		EE04B3606321615AF7D27028 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F93E72394EF6FF9D7E630C9A /* LoadedDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadedDocument.swift; sourceTree = "<group>"; };
 		FD5A4DC927280F4A3996919C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		0C2571CD8BD0D1F5B4867277 /* BookleetCLI */ = {
+			isa = PBXGroup;
+			children = (
+				EE04B3606321615AF7D27028 /* main.swift */,
+			);
+			path = BookleetCLI;
+			sourceTree = "<group>";
+		};
 		52C7522B1BE9B4BBD506F0C4 /* BookleetTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -65,7 +78,7 @@
 			children = (
 				D5ADA5D3895F67B6B30A687E /* Assets.xcassets */,
 				7065D4630D8F52AF6C0CE65C /* BookleetApp.swift */,
-				E1A2B3C4D5E6F708192A3B4D /* BookleetCommands.swift */,
+				781BE8068BB3233D72AD5C25 /* BookleetCommands.swift */,
 				B3A162C37A53646103599E5E /* BookletImposer.swift */,
 				4FA6C1EA88A95F029AAD1C57 /* BookletPreviewModel.swift */,
 				D8913533B6C48B5141936972 /* BookletSettings.swift */,
@@ -81,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				6E7F24B051594C940A2D0326 /* Bookleet.app */,
+				5F6C7E80ADE637DE0319265E /* BookleetCLI */,
 				7554CB3E5B228CC946A5F611 /* BookleetTests.xctest */,
 			);
 			name = Products;
@@ -90,9 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				5ADF984549D1C963A18C5067 /* Bookleet */,
+				0C2571CD8BD0D1F5B4867277 /* BookleetCLI */,
 				52C7522B1BE9B4BBD506F0C4 /* BookleetTests */,
 				61FED4D97A929EF3350ECD09 /* Products */,
-				DC895FCD2FD6FD0700A74F4C /* AppIcon.icon */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +130,23 @@
 			productName = Bookleet;
 			productReference = 6E7F24B051594C940A2D0326 /* Bookleet.app */;
 			productType = "com.apple.product-type.application";
+		};
+		BBD62AF6ADFB166517992D72 /* BookleetCLI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9B9C3A552ED89CAD903DBA5 /* Build configuration list for PBXNativeTarget "BookleetCLI" */;
+			buildPhases = (
+				9AFAF5E16C77FA9E1291B1D6 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BookleetCLI;
+			packageProductDependencies = (
+			);
+			productName = BookleetCLI;
+			productReference = 5F6C7E80ADE637DE0319265E /* BookleetCLI */;
+			productType = "com.apple.product-type.tool";
 		};
 		C89E89D8C688A35CE973CDB2 /* BookleetTests */ = {
 			isa = PBXNativeTarget;
@@ -142,7 +173,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 2650;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					69511B4EBDFD014366F3B6EC = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 193B710D7728AC00E6247825 /* Build configuration list for PBXProject "Bookleet" */;
 			developmentRegion = en;
@@ -159,6 +196,7 @@
 			projectRoot = "";
 			targets = (
 				69511B4EBDFD014366F3B6EC /* Bookleet */,
+				BBD62AF6ADFB166517992D72 /* BookleetCLI */,
 				C89E89D8C688A35CE973CDB2 /* BookleetTests */,
 			);
 		};
@@ -169,7 +207,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC895FCE2FD6FD0700A74F4C /* AppIcon.icon in Resources */,
 				A294F1EE8437BB8C7DE741E6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,12 +223,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9AFAF5E16C77FA9E1291B1D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1974FB4E13FB2F64620BC1A3 /* BookletImposer.swift in Sources */,
+				9515E33A5A135D69A4A06573 /* BookletSettings.swift in Sources */,
+				890E51344BE0484FD91C3045 /* LoadedDocument.swift in Sources */,
+				A2A1F8CA3F512B9ACD5C08F0 /* PDFDocument+Images.swift in Sources */,
+				EBAA6590C3D77F0AC1279B4F /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A264570F3E259DFDFBD12EBE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CD4C0641D68C470CF19A0BB8 /* BookleetApp.swift in Sources */,
-				E1A2B3C4D5E6F708192A3B4C /* BookleetCommands.swift in Sources */,
+				6EE5D4B59E38108DAD1D0079 /* BookleetCommands.swift in Sources */,
 				E8978AE4441250C3C5F2DF23 /* BookletImposer.swift in Sources */,
 				0976E631565800BBE26DBB84 /* BookletPreviewModel.swift in Sources */,
 				3189D7FFBFCAA031B8102BE0 /* BookletSettings.swift in Sources */,
@@ -247,11 +296,9 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -272,7 +319,6 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 6.0;
@@ -284,13 +330,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = Bookleet/Bookleet.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_TESTABILITY = YES;
@@ -302,7 +345,6 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bookleet.Bookleet;
 				PRODUCT_NAME = Bookleet;
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -341,11 +383,9 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -359,19 +399,32 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
+		463E66106083AE9AD531FA3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bookleet.cli;
+				PRODUCT_NAME = bookleet;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
 		8EAA08C124631F70F4B1B077 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -390,7 +443,6 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -404,18 +456,30 @@
 			};
 			name = Release;
 		};
+		F256E5D77F1FEFD4FD6371D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bookleet.cli;
+				PRODUCT_NAME = bookleet;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		F7C811365CAD00953980DDF1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = Bookleet/Bookleet.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_TESTABILITY = YES;
@@ -427,7 +491,6 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bookleet.Bookleet;
 				PRODUCT_NAME = Bookleet;
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -458,6 +521,15 @@
 			buildConfigurations = (
 				8EAA08C124631F70F4B1B077 /* Debug */,
 				B86E008087BDD12815A1CC81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C9B9C3A552ED89CAD903DBA5 /* Build configuration list for PBXNativeTarget "BookleetCLI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				463E66106083AE9AD531FA3D /* Debug */,
+				F256E5D77F1FEFD4FD6371D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
