@@ -66,7 +66,7 @@ The `.xcodeproj` is generated from `project.yml` via [XcodeGen](https://github.c
 - **Command line:** `xcodebuild -project Bookleet.xcodeproj -scheme Bookleet -configuration Release archive`
 - **Tests:** Product → Test (⌘U), or `xcodebuild test -project Bookleet.xcodeproj -scheme Bookleet -destination 'platform=macOS'`
 
-Bundle ID: `com.bookleet.Bookleet`. Add app icon images to `Bookleet/Assets.xcassets/AppIcon.appiconset/`.
+Bundle ID: `com.bookleet.Bookleet`. App icons live in `AppIcon.icon` (Icon Composer) and `Bookleet/Assets.xcassets/AppIcon.appiconset/` (generated for older macOS).
 
 ## What works now
 

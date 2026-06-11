@@ -12,6 +12,7 @@
 		3189D7FFBFCAA031B8102BE0 /* BookletSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8913533B6C48B5141936972 /* BookletSettings.swift */; };
 		36D893396A9BBEAA6FAFB935 /* BookletImposerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D902C329FE4377C40AE11D9 /* BookletImposerTests.swift */; };
 		3F1F7C7BDE8FDCB8D749E6C5 /* PDFDocument+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521BA8FF0802ADD6DF4A8578 /* PDFDocument+Images.swift */; };
+		506BB3FD9EF82A996FE27079 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 6AE24A872BD71A3FF3C6705B /* AppIcon.icon */; };
 		6EE5D4B59E38108DAD1D0079 /* BookleetCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781BE8068BB3233D72AD5C25 /* BookleetCommands.swift */; };
 		890E51344BE0484FD91C3045 /* LoadedDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93E72394EF6FF9D7E630C9A /* LoadedDocument.swift */; };
 		8B745F85C4AADA7A4495146C /* VirtualizedBookletPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6520A1AC62A79A4399A6D85B /* VirtualizedBookletPreview.swift */; };
@@ -42,6 +43,7 @@
 		521BA8FF0802ADD6DF4A8578 /* PDFDocument+Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PDFDocument+Images.swift"; sourceTree = "<group>"; };
 		5F6C7E80ADE637DE0319265E /* BookleetCLI */ = {isa = PBXFileReference; includeInIndex = 0; path = BookleetCLI; sourceTree = BUILT_PRODUCTS_DIR; };
 		6520A1AC62A79A4399A6D85B /* VirtualizedBookletPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualizedBookletPreview.swift; sourceTree = "<group>"; };
+		6AE24A872BD71A3FF3C6705B /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = wrapper.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 		6E7F24B051594C940A2D0326 /* Bookleet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookleet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7065D4630D8F52AF6C0CE65C /* BookleetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookleetApp.swift; sourceTree = "<group>"; };
 		7554CB3E5B228CC946A5F611 /* BookleetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookleetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +108,7 @@
 				5ADF984549D1C963A18C5067 /* Bookleet */,
 				0C2571CD8BD0D1F5B4867277 /* BookleetCLI */,
 				52C7522B1BE9B4BBD506F0C4 /* BookleetTests */,
+				6AE24A872BD71A3FF3C6705B /* AppIcon.icon */,
 				61FED4D97A929EF3350ECD09 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				506BB3FD9EF82A996FE27079 /* AppIcon.icon in Resources */,
 				A294F1EE8437BB8C7DE741E6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
