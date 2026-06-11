@@ -116,7 +116,7 @@ struct BookletSettings: Equatable, Sendable {
     var drawBottomEdge = true
     var drawInsideEdge = true
     var drawOutsideEdge = true
-    var drawFoldGuide = true
+    var drawFoldGuide = false
     var foldGuideWidth: Double = 0.4
     var foldGuideStyle: BorderLineStyle = .solid
     var drawCutMarks = false

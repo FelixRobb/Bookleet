@@ -1,3 +1,5 @@
+import AppKit
+import PDFKit
 import Testing
 @testable import Bookleet
 
@@ -48,6 +50,23 @@ struct BookletImposerTests {
         #expect(sides[2].sheetNumber == 2)
     }
 
+    @Test func foldGuideAlignsOnFrontAndBackOfSameSheet() throws {
+        let source = PDFDocument(data: makePDF(pageCount: 8))!
+        var settings = BookletSettings()
+        settings.drawFoldGuide = true
+        settings.foldGuideWidth = 2
+
+        let sides = BookletImposer.sheetSides(sourcePageCount: source.pageCount, settings: settings)
+        let front = try BookletImposer.renderSideImage(source: source, settings: settings, side: sides[0], scale: 2)
+        let back = try BookletImposer.renderSideImage(source: source, settings: settings, side: sides[1], scale: 2)
+
+        let frontFoldX = try #require(foldGuideX(in: front))
+        let backFoldX = try #require(foldGuideX(in: back))
+
+        #expect(abs(frontFoldX - backFoldX) < 2)
+        #expect(abs(frontFoldX - (front.size.width / 2)) < 4)
+    }
+
     @Test func imposesOnlySelectedPageRange() {
         var settings = BookletSettings()
         settings.usePageRange = true
@@ -65,5 +84,43 @@ struct BookletImposerTests {
         side.placements.map { placement in
             placement.sourcePageIndex.map { $0 + 1 }
         }
+    }
+
+    private func makePDF(pageCount: Int) -> Data {
+        let data = NSMutableData()
+        let consumer = CGDataConsumer(data: data as CFMutableData)!
+        var mediaBox = CGRect(x: 0, y: 0, width: 595, height: 842)
+        let context = CGContext(consumer: consumer, mediaBox: &mediaBox, nil)!
+        for _ in 0..<pageCount {
+            context.beginPDFPage(nil)
+            context.endPDFPage()
+        }
+        context.closePDF()
+        return data as Data
+    }
+
+    private func foldGuideX(in image: NSImage) -> CGFloat? {
+        guard let tiff = image.tiffRepresentation, let bitmap = NSBitmapImageRep(data: tiff) else {
+            return nil
+        }
+
+        let width = bitmap.pixelsWide
+        let height = bitmap.pixelsHigh
+        var columnScores = [Int](repeating: 0, count: width)
+
+        for y in stride(from: height / 4, to: (height * 3) / 4, by: 2) {
+            for x in 0..<width {
+                guard let color = bitmap.colorAt(x: x, y: y) else { continue }
+                if color.brightnessComponent < 0.8 {
+                    columnScores[x] += 1
+                }
+            }
+        }
+
+        guard let peak = columnScores.enumerated().max(by: { $0.element < $1.element }), peak.element > 0 else {
+            return nil
+        }
+
+        return CGFloat(peak.offset) / CGFloat(max(width - 1, 1)) * image.size.width
     }
 }

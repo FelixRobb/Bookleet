@@ -235,7 +235,7 @@ enum BookletImposer {
     ) {
         context.setFillColor(NSColor.white.cgColor)
         context.fill(mediaBox)
-        drawGuides(in: context, mediaBox: mediaBox, settings: settings)
+        drawGuides(in: context, mediaBox: mediaBox, settings: settings, side: side)
 
         for placement in side.placements {
             switch placement.content {
@@ -253,6 +253,16 @@ enum BookletImposer {
             }
             drawPageNumberIfNeeded(in: context, frame: placement.frame, placement: placement, side: side, settings: settings)
         }
+    }
+
+    private static func spineX(for side: ImposedSheetSide, mediaBox: CGRect) -> CGFloat {
+        guard side.placements.count == 2 else {
+            return mediaBox.midX
+        }
+
+        let leftFrame = side.placements[0].frame
+        let rightFrame = side.placements[1].frame
+        return (leftFrame.maxX + rightFrame.minX) / 2
     }
 
     private static func openDocument(_ source: BookletRenderSource) throws -> PDFDocument {
@@ -436,15 +446,16 @@ enum BookletImposer {
         context.restoreGState()
     }
 
-    private static func drawGuides(in context: CGContext, mediaBox: CGRect, settings: BookletSettings) {
+    private static func drawGuides(in context: CGContext, mediaBox: CGRect, settings: BookletSettings, side: ImposedSheetSide) {
         context.saveGState()
         context.setStrokeColor(guideStrokeColor)
         context.setLineWidth(CGFloat(settings.foldGuideWidth))
 
         if settings.drawFoldGuide {
+            let foldX = spineX(for: side, mediaBox: mediaBox)
             applyLineStyle(settings.foldGuideStyle, width: CGFloat(settings.foldGuideWidth), to: context)
-            context.move(to: CGPoint(x: mediaBox.midX, y: 0))
-            context.addLine(to: CGPoint(x: mediaBox.midX, y: mediaBox.height))
+            context.move(to: CGPoint(x: foldX, y: 0))
+            context.addLine(to: CGPoint(x: foldX, y: mediaBox.height))
             context.strokePath()
         }
 
