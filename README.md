@@ -93,3 +93,7 @@ For large documents, full export and print output is rendered directly to a PDF 
 ## Format note
 
 PDFs are imposed directly because their page geometry is exact and stable. Word, Pages, and similar document formats need to be exported or printed to PDF first, then imported into Bookleet. That keeps booklet ordering and page boundaries identical to what the user expects from the source app.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
