@@ -66,11 +66,27 @@ final class BookletPreviewModel {
 
         renderTasks[index] = Task {
             do {
-                let image = try await Task.detached(priority: .userInitiated) {
-                    try BookletImposer.renderSideImage(source: renderSource, settings: settingsSnapshot, side: side)
+                let imageData = try await Task.detached(priority: .userInitiated) {
+                    let image = try BookletImposer.renderSideImage(
+                        source: renderSource,
+                        settings: settingsSnapshot,
+                        side: side
+                    )
+                    guard let tiff = image.tiffRepresentation,
+                          let bitmap = NSBitmapImageRep(data: tiff),
+                          let png = bitmap.representation(using: .png, properties: [:]) else {
+                        throw BookletError.renderingFailed
+                    }
+                    return png
                 }.value
 
                 guard !Task.isCancelled, currentGeneration == generation else {
+                    return
+                }
+
+                guard let image = NSImage(data: imageData) else {
+                    loadingSides.remove(index)
+                    renderTasks[index] = nil
                     return
                 }
 
