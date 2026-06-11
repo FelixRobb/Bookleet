@@ -2,6 +2,32 @@
 
 Bookleet is a native macOS SwiftUI app for turning ordinary PDFs into print-ready booklet PDFs.
 
+**Requirements:** macOS 14 (Sonoma) or later · Universal (Apple Silicon + Intel)
+
+## Try it (unsigned build)
+
+Pre-built releases are attached to [GitHub Releases](https://github.com/FelixRobb/Bookleet/releases). These builds are **not notarized** and are signed ad hoc for local testing only.
+
+1. Download `Bookleet-*-macOS-unsigned.zip` from the latest release.
+2. Unzip and move `Bookleet.app` to Applications (or run from anywhere).
+3. On first launch, macOS may block the app. Either:
+   - **Right-click → Open** on `Bookleet.app`, then confirm Open, or
+   - Remove the quarantine flag: `xattr -cr /Applications/Bookleet.app`
+
+To build the same zip locally:
+
+```bash
+chmod +x scripts/package-unsigned.sh
+./scripts/package-unsigned.sh
+```
+
+Tag a version to publish a release automatically (GitHub Actions builds and uploads the zip):
+
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
+
 ## Run in Xcode
 
 1. Open `Bookleet.xcodeproj` in Xcode.
