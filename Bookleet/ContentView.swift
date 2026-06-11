@@ -1,4 +1,5 @@
 import AppKit
+import ApplicationServices
 import PDFKit
 import SwiftUI
 import UniformTypeIdentifiers
@@ -461,9 +462,10 @@ struct ContentView: View {
         dictionary[NSPrintInfo.AttributeKey.jobDisposition] = NSPrintInfo.JobDisposition.spool.rawValue
         dictionary[NSPrintInfo.AttributeKey(rawValue: "NSPrintColor")] = printSettings.colorMode == .color
         dictionary[NSPrintInfo.AttributeKey(rawValue: "NSPrintQuality")] = printSettings.quality.printValue
-        dictionary[NSPrintInfo.AttributeKey(rawValue: "NSPrintDuplex")] = printSettings.twoSided
 
-        let operation = document.printOperation(for: printInfo, scalingMode: .pageScaleToFit, autoRotate: true)
+        applyDuplexSetting(to: printInfo, twoSided: printSettings.twoSided)
+
+        let operation = document.printOperation(for: printInfo, scalingMode: .pageScaleToFit, autoRotate: false)
         operation?.showsPrintPanel = showNativeDialog || printSettings.showNativeDialog
         operation?.showsProgressPanel = true
         operation?.run()
@@ -686,5 +688,13 @@ private struct FinalPrintView: View {
                 settings.printerName = firstPrinter
             }
         }
+    }
+}
+
+private func applyDuplexSetting(to printInfo: NSPrintInfo, twoSided: Bool) {
+    let mode: PMDuplexMode = twoSided ? PMDuplexMode(kPMDuplexTumble) : PMDuplexMode(kPMDuplexNone)
+    let settings = OpaquePointer(printInfo.pmPrintSettings())
+    if PMSetDuplex(settings, mode) == noErr {
+        printInfo.updateFromPMPrintSettings()
     }
 }
